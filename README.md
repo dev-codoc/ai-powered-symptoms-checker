@@ -46,7 +46,11 @@ An AI-powered healthcare assistant that helps users analyze symptoms, receive AI
 
 ## 📸 Screenshots
 
-> Add screenshots here
+<img width="1920" height="917" alt="image" src="https://github.com/user-attachments/assets/9e2c7dbf-13bf-41cb-806e-2fa2d594b926" />
+<img width="1557" height="642" alt="image" src="https://github.com/user-attachments/assets/89b7edde-6bc9-4e6f-820d-00304f95e028" />
+<img width="1526" height="793" alt="image" src="https://github.com/user-attachments/assets/9e1c9ecc-3c93-4d5c-89c0-df12d183fc49" />
+
+
 
 ```
 /screenshots
