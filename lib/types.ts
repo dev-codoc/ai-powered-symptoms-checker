@@ -40,12 +40,8 @@ export interface TreatmentSuggestion {
   suggestion: string;
   severity: "mild" | "moderate" | "severe";
   disclaimer: string;
-}
-
-export interface TreatmentSuggestion {
-  suggestion: string;
-  severity: "mild" | "moderate" | "severe";
-  disclaimer: string;
+  isFollowUp: boolean;
+  followUpQuestion: string | null;
 }
 
 export interface ChatMessage {

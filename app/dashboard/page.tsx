@@ -6,6 +6,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { Navbar } from "@/components/layout/Navbar";
 import { SymptomForm } from "@/components/symptoms/SymptomForm";
 import { TreatmentDisplay } from "@/components/symptoms/TreatmentDisplay";
+import { SymptomChat } from "@/components/symptoms/SymptomChat";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { TreatmentSuggestion } from "@/lib/types";
@@ -98,6 +99,7 @@ export default function DashboardPage() {
           ) : (
             <div className="space-y-4">
               <TreatmentDisplay treatment={treatment} symptoms={submittedSymptoms} />
+              <SymptomChat treatment={treatment} symptoms={submittedSymptoms} />
               <div className="flex flex-col gap-3 sm:flex-row">
                 <Button onClick={handleReset} variant="outline" className="flex-1">
                   <RefreshCw className="h-4 w-4" />

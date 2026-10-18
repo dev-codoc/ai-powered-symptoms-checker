@@ -1,5 +1,5 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import { TreatmentSuggestion } from "./types";
+import { ChatMessage, ChatResponse } from "./types";
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY as string);
 
@@ -107,19 +107,6 @@ Assistant:
 
 Remember: The user's need for an immediate, practical solution is the priority. Ask follow-up questions only when they are genuinely necessary for safety or better guidance.`;
 
-
-export interface ChatMessage {
-  role: "user" | "model";
-  content: string;
-}
-
-export interface ChatResponse {
-  severity: "mild" | "moderate" | "severe";
-  suggestion: string;
-  isFollowUp: boolean;
-  followUpQuestion: string | null;
-  disclaimer: string;
-}
 
 const DISCLAIMER =
   "This is not a medical diagnosis. The suggestions provided are for informational purposes only and should not replace professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.";
